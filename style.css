@@ -1,34 +1,51 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.topbar {
+    background-color: #611232;
+    color: white;
+    padding: 15px 30px;
+}
+
+.topbar h2 {
+    margin: 0;
+}
+
+.topbar span {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.main-container {
     display: flex;
-    justify-content: center;
-    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
-.container {
+.card {
     background: white;
-    padding: 30px;
-    width: 600px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 700px;
+    padding: 40px;
     border-radius: 8px;
-}
-
-h1 {
-    color: #7a1c1c;
-}
-
-.subtitle {
-    color: #555;
-    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .data {
-    margin: 8px 0;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-.valido {
-    color: green;
+.status-valid {
+    color: #0a7a0a;
+    font-weight: bold;
+}
+
+.status-invalid {
+    color: #b00020;
     font-weight: bold;
 }
 
@@ -36,4 +53,26 @@ h1 {
     margin-top: 30px;
     font-size: 12px;
     color: gray;
+    text-align: center;
+    max-width: 600px;
+}
+
+/* Loader */
+
+.loader {
+    text-align: center;
+}
+
+.spinner {
+    margin: 0 auto 20px;
+    border: 6px solid #eee;
+    border-top: 6px solid #611232;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
 }
