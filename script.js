@@ -1,14 +1,13 @@
 const certificados = {
     "CE1218134784": {
-        nombre: "Cristopher Nava Zagal",
+        nombre: "CRISTOPHER NAVA ZAGAL",
         curp: "NAZC030324HGRVGR8",
         nivel: "Educación Secundaria",
-        modalidad: "Secundaria para Adultos",
-        centro: "12DBA0049R",
-        promedio: "8.0",
+        centro: "09FIA001B",
+        promedio: "8.7",
         estatus: "VÁLIDO",
-        fecha: "11/02/2026",
-        autoridad: "Arturo Salgado Uriostegui"
+        fecha: "06/07/2018",
+        autoridad: "PROF. SALVADOR MUNDO SOTELO"
     }
 };
 
@@ -19,7 +18,7 @@ const resultado = document.getElementById("resultado");
 const loader = document.getElementById("loader");
 
 function generarSelloDigital(folio) {
-    return btoa(folio + "-SELLO-DEMO-2026").substring(0, 40);
+    return btoa(folio + "-SEP-VALIDACION-2018").substring(0, 50);
 }
 
 setTimeout(() => {
@@ -36,13 +35,12 @@ setTimeout(() => {
             <div class="data"><strong>Folio:</strong> ${folio}</div>
             <div class="data"><strong>Nombre del alumno:</strong> ${c.nombre}</div>
             <div class="data"><strong>CURP:</strong> ${c.curp}</div>
-            <div class="data"><strong>Nivel educativo:</strong> ${c.nivel}</div>
-            <div class="data"><strong>Modalidad:</strong> ${c.modalidad}</div>
-            <div class="data"><strong>Centro de trabajo:</strong> ${c.centro}</div>
-            <div class="data"><strong>Promedio final:</strong> ${c.promedio}</div>
-            <div class="data status-valid"><strong>Estatus del documento:</strong> ${c.estatus}</div>
+            <div class="data"><strong>Centro de Trabajo:</strong> ${c.centro}</div>
+            <div class="data"><strong>Nivel Educativo:</strong> ${c.nivel}</div>
+            <div class="data"><strong>Promedio Final:</strong> ${c.promedio}</div>
             <div class="data"><strong>Fecha de emisión:</strong> ${c.fecha}</div>
-            <div class="data"><strong>Autoridad firmante:</strong> ${c.autoridad}</div>
+            <div class="data"><strong>Autoridad Educativa:</strong> ${c.autidad}</div>
+            <div class="data status-valid"><strong>Estatus del documento:</strong> ${c.estatus}</div>
             <hr>
             <div class="data"><strong>Sello digital:</strong><br>${sello}</div>
         `;
