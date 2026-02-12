@@ -2,21 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portal de Verificación de Certificados</title>
+    <title>Verificación de Certificado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    <h1>Portal de Verificación</h1>
-    <p class="subtitle">Sistema Educativo Nacional (Modo Demo)</p>
+<header class="topbar">
+    <div class="topbar-content">
+        <h2>Sistema Educativo Nacional</h2>
+        <span>Portal de Verificación de Certificados</span>
+    </div>
+</header>
 
-    <div id="resultado"></div>
+<main class="main-container">
+
+    <div class="card">
+
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p>Validando certificado en base de datos nacional...</p>
+        </div>
+
+        <div id="resultado" style="display:none;"></div>
+
+    </div>
 
     <p class="disclaimer">
-        Documento generado con fines demostrativos / académicos.
+        Documento generado con fines demostrativos / académicos. 
+        Este portal no pertenece a ninguna institución oficial.
     </p>
-</div>
+
+</main>
 
 <script src="script.js"></script>
 </body>
