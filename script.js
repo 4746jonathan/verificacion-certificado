@@ -39,7 +39,7 @@ setTimeout(() => {
             <div class="data"><strong>Nivel Educativo:</strong> ${c.nivel}</div>
             <div class="data"><strong>Promedio Final:</strong> ${c.promedio}</div>
             <div class="data"><strong>Fecha de emisión:</strong> ${c.fecha}</div>
-            <div class="data"><strong>Autoridad Educativa:</strong> ${c.autidad}</div>
+            <div class="data"><strong>Autoridad Educativa:</strong> ${c.autoridad}</div>
             <div class="data status-valid"><strong>Estatus del documento:</strong> ${c.estatus}</div>
             <hr>
             <div class="data"><strong>Sello digital:</strong><br>${sello}</div>
