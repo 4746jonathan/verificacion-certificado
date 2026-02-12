@@ -2,43 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Verificación de Certificado</title>
+    <title>Portal de Verificación Académica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Secretaria de educación pública</h1>
+    <div class="topbar">
+        <h1>Secretaría de Educación Pública</h1>
         <p>Portal de Verificación Académica</p>
-    </header>
+    </div>
 
-    <main>
-        <section>
+    <div class="container">
+        <div class="card">
+
             <h2>Resultado de Verificación</h2>
 
-            <p><strong>Folio:</strong> CE1218134784</p>
-            <p><strong>Nombre del alumno:</strong> CRISTOPHER NAVA ZAGAL</p>
-            <p><strong>CURP:</strong> NAZC030324HGRVGR8</p>
-            <p><strong>Centro de Trabajo:</strong> 09FIA001B</p>
-            <p><strong>Nivel Educativo:</strong> Educación Secundaria</p>
-            <p><strong>Promedio Final:</strong> 8.7</p>
-            <p><strong>Fecha de emisión:</strong> 06/07/2018</p>
-            <p><strong>Autoridad Educativa:</strong> PROF. SALVADOR MUNDO SOTELO</p>
+            <div id="loader">Verificando folio...</div>
 
-            <p><strong>Estatus del documento:</strong> ✅ VÁLIDO</p>
-        </section>
+            <div id="resultado" style="display:none;"></div>
 
-        <section>
-            <p>
-         Este documento electrónico ha sido firmado mediante certificado digital vigente conforme a la legislación aplicable.
-            </p>
-        </section>
-    </main>
+            <div class="legal">
+                Este documento electrónico ha sido firmado mediante certificado digital vigente conforme a la legislación aplicable.
+            </div>
 
-    <footer>
-        <p>Documento generado electrónicamente | Sistema de Validación Académica</p>
-    </footer>
+            <div class="footer">
+                Documento generado electrónicamente | Sistema de Validación Académica
+            </div>
 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
